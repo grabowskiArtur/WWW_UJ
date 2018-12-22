@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Story</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css"/>  <!-- nie ma znacznika zamykajacego -->
+<!-- bez rel nie dziala. trzeba mu powiedziec zeby sobie wzial ten szablon stylu -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+crossorigin="anonymous"></script>
+</head>
+<body>
+<h1>My Story</h1>
+<p>Once upon a time &copy;, …</p>
+<ol>
+	<li class="czerwony"> Ala </li>
+	<li class="uwaga_12"> ma </li>
+</ol>
+<img alt="tekst alternatywny" src="https://pobierak.jeja.pl/images/9/e/6/103520_jezeli-obrazek-twoj-w-poczekalni.j" />
+<a href="link.html">​​ Tekst odnośnika (lub obrazek)​​ </a>
+<h1 class="czerwony" onclick="czlowiek.wyswietl()"> Ala ma kota </h1>
+<P class="uwaga_12" >
+    a kot ma ale
+</P>
+<h3 id="zwierze" onmouseover="dodajIWyswietl(7,5)"> <!-- h3 mniejszy naglowek h1 najwiekszy h1- h6 -->
+    krokodyl 
+
+</h3>
+<script type="text/javascript"> 
+//bibliotek jquery 
+// pomeidzy znacznikami obowiazuje js.
+    
+//alert("Hello world");
+
+var a = 7; 
+var b = prompt("podaj liczbe");
+
+//alert(parseInt(b)+a);
+
+//alert("Wynik" + dodawanie(parseInt(b),a));
+
+function dodajIWyswietl(a ,b)
+{    
+    alert(a + b);    
+}
+
+function dodawanie(a,b)
+{    
+    return a + b ;
+}
+
+// postac literalowa vs funkcyjna 
+
+var czlowiek = {
+    imie : "Artur",
+    wiek : 7,
+    wyswietl:function()
+    {
+        alert("Imie to : " + this.imie )
+
+    }
+     // psotac literalowa
+}
+//alert(czlowiek.imie);
+czlowiek.wyswietl();
+
+
+var czlowiek2 = new czlowiek;
+
+czlowiek2.imie
+//postac funkcyjna
+var zwierz = function(){
+
+}
+
+
+
+</script> 
+
+</body>
+</html>

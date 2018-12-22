@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Story</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css"/>  <!-- nie ma znacznika zamykajacego -->
+<!-- bez rel nie dziala. trzeba mu powiedziec zeby sobie wzial ten szablon stylu -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+crossorigin="anonymous"></script>
+</head>
+<body>
+<h1 id="tytul">My Story</h1> <!-- w html wszystko w jednej linijce -->
+
+<p>Once upon a time &copy;, …</p>
+<ol>
+	<li class="czerwony"> Ala </li>
+	<li class="uwaga_12"> ma </li>
+</ol>
+<img alt="tekst alternatywny" src="https://pobierak.jeja.pl/images/9/e/6/103520_jezeli-obrazek-twoj-w-poczekalni.j" />
+<a href="link.html">​​ Tekst odnośnika (lub obrazek)​​ </a>
+<h1 class="czerwony" > Ala ma kota </h1>
+<P class="uwaga_12" >
+    a kot ma ale
+</P>
+<h3 id="zwierze" > <!-- h3 mniejszy naglowek h1 najwiekszy h1- h6 -->
+    krokodyl 
+</h3>
+
+<hr> <!-- kreska w poziomie na stronce -->
+
+<form >
+    <span>Tu wpisz imie: </span>
+    <input type="text">
+    <br><span>Tu wpisz Nazwisko: </span>  <!-- BR NOWA LINIA -->
+    <input type="text">
+    <input id="dodaj" type="button" value="WYBIERZ"> 
+    <input id="usun" type="button" value="USUN"> 
+
+</form>
+
+<script>
+    // jquery slzy do tego zeby upraszczsac orzystanie z html , checmy manipulowac 
+    // zdarzeniami w prosty sposob, miec mozliwosc rejestracji zdarzen
+    // komuniacja asynchroniczna
+    //na czym,kiedy,co struktura jquery 
+    $("h1.czerwony").click(function(){ 
+        alert("Hello World");
+    }) // kropka to klasye # identyfikator
+    $("#tytul").mouseover(function(){
+        $(this).addClass("innyKolor");
+
+    }).mouseout(function(){
+        $(this).removeClass("innyKolor");
+    })
+    
+    $("#zwierze").click(function(){
+        $("h1.czerwony").toggle(); 
+        // display none w kodzie nie da sie teraz odwrocic  dla hide    
+
+    })
+    
+    $("a").mouseover(function(){
+        $(this).css("background-color", "yellow"); //inline, a nie w pliku css
+
+    }) // jesli jeden na stronie to mozna sie posluzyc tylko za pomoca tej literki
+    $("a").mouseout(function(){
+        $(this).css("background-color", "white"); // inline, a nie w pliku css
+
+    })
+ // id moze byc tlyko jeden, identyfikator
+    $("#dodaj").click(function(){ // # do identyfikatora
+        $(this).after("<br> <span> Tu wpisz Nazwisko: </span> <input type='text'>");
+        $("#usun").show();
+
+    })
+
+    $("#usun").hide();
+
+    $("#usun").click(function(){
+        $("#dodaj").next().remove().next().remove();
+    })
+
+//pomysl NAD divem zeby to usuwac
+
+
+
+
+
+</script>
+
+</body>
+</html>

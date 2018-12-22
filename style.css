@@ -1,0 +1,16 @@
+h1 {text-align: center;
+    color: yellow;
+    background: green;
+    padding: 4px;}
+.uwaga_12{font-size:16px;
+    font-family:Arial;
+    color:#804040;
+    font-weight:bold;}
+.czerwony {background-color : red;}
+.innyKolor{background-color: blue;
+    font-size: 30px;
+} 
+#zwierze{ 
+    font-style: italic;
+
+}
