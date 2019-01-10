@@ -12,81 +12,94 @@ crossorigin="anonymous"></script>
 <h1 id="tytul">My Story</h1> <!-- w html wszystko w jednej linijce -->
 
 <p>Once upon a time &copy;, …</p>
-<ol>
+<p>There is sth <br> in the air &lt; </p>
+<ul>
 	<li class="czerwony"> Ala </li>
 	<li class="uwaga_12"> ma </li>
-</ol>
-<img alt="tekst alternatywny" src="https://pobierak.jeja.pl/images/9/e/6/103520_jezeli-obrazek-twoj-w-poczekalni.j" />
+</ul>
+<img alt="tekst alternatywny" src="https://samequizy.pl/wp-content/uploads/2015/12/filing_images_c38ed14affe8.jpg" />
 <a href="link.html">​​ Tekst odnośnika (lub obrazek)​​ </a>
 <h1 class="czerwony" > Ala ma kota </h1>
-<P class="uwaga_12" >
+<p class="uwaga_12" >
     a kot ma ale
-</P>
-<h3 id="zwierze" > <!-- h3 mniejszy naglowek h1 najwiekszy h1- h6 -->
-    krokodyl 
+</p>
+<h3 id="zwierze" > <!-- h3 mniejszy naglowek h1 najwiekszy h1-> h6 -->
+    krokodyl
 </h3>
 
 <hr> <!-- kreska w poziomie na stronce -->
 
-<form >
+<form > <!--to chyba po prostu musi byc do zdarzen-->
+
     <span>Tu wpisz imie: </span>
     <input type="text">
     <br><span>Tu wpisz Nazwisko: </span>  <!-- BR NOWA LINIA -->
     <input type="text">
-    <input id="dodaj" type="button" value="WYBIERZ"> 
-    <input id="usun" type="button" value="USUN"> 
+    <input id="dodaj" type="button" value="WYBIERZ">
+    <input id="usun" type="button" value="USUN">
 
+    <p class="wpisywanie" hidden>
+        <br><span> Podaj nr telefonu: </span> <input type='text'>
+    </p>
 </form>
 
 <script>
-    // jquery slzy do tego zeby upraszczsac orzystanie z html , checmy manipulowac 
+    // jquery slzy do tego zeby upraszczsac orzystanie z html , checmy manipulowac
     // zdarzeniami w prosty sposob, miec mozliwosc rejestracji zdarzen
     // komuniacja asynchroniczna
-    //na czym,kiedy,co struktura jquery 
-    $("h1.czerwony").click(function(){ 
+    //na czym,kiedy,co struktura jquery
+
+    let iloscNr = 0;
+    $("h1.czerwony").click(function(){
         alert("Hello World");
-    }) // kropka to klasye # identyfikator
+    }) // kropka to klasy a # identyfikator
     $("#tytul").mouseover(function(){
         $(this).addClass("innyKolor");
 
     }).mouseout(function(){
         $(this).removeClass("innyKolor");
     })
-    
+
     $("#zwierze").click(function(){
-        $("h1.czerwony").toggle(); 
-        // display none w kodzie nie da sie teraz odwrocic  dla hide    
+        $("h1.czerwony").toggle();
+        // display none w kodzie nie da sie teraz odwrocic  dla hide
 
     })
-    
+
     $("a").mouseover(function(){
-        $(this).css("background-color", "yellow"); //inline, a nie w pliku css
+        $(this).css("background-color", "yellow"); //inline, w locie, a nie w pliku css
 
     }) // jesli jeden na stronie to mozna sie posluzyc tylko za pomoca tej literki
     $("a").mouseout(function(){
         $(this).css("background-color", "white"); // inline, a nie w pliku css
 
     })
- // id moze byc tlyko jeden, identyfikator
+ // id moze byc tylko jeden, identyfikator
     $("#dodaj").click(function(){ // # do identyfikatora
-        $(this).after("<br> <span> Tu wpisz Nazwisko: </span> <input type='text'>");
+        $("p.wpisywanie").show();
+        $(this).after($("p.wpisywanie").after("<br>"));
+        iloscNr++;
+        //$(this).after("<br> <span> Tu wpisz Nazwisko: </span> <input type='text'>");
         $("#usun").show();
 
     })
 
-    $("#usun").hide();
+    $("#usun").hide(); /*pewnie domyslnie*/
 
-    $("#usun").click(function(){
-        $("#dodaj").next().remove().next().remove();
+
+    $("#usun").click(function()
+    {
+        $("#dodaj").next().remove();
+        iloscNr--
+        if (iloscNr ==0)
+        {
+            $("#usun").hide();
+        }
+        //
     })
 
 //pomysl NAD divem zeby to usuwac
-
-
-
-
-
+8
 </script>
-
 </body>
 </html>

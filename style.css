@@ -9,8 +9,8 @@ h1 {text-align: center;
 .czerwony {background-color : red;}
 .innyKolor{background-color: blue;
     font-size: 30px;
-} 
-#zwierze{ 
+}
+/*etykieta ktora powinna byc uzywana wylacznie raz*/
+#zwierze{
     font-style: italic;
-
 }
