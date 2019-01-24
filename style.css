@@ -1,11 +1,37 @@
-h1 {text-align: center;
+/** { margin:0 ;
+    padding: 0;
+}*/ /*ustawienia domyslne dla calej strony*/
+article{
+    text-decoration: blink; /*decapricated*/
+    animation: blinker-one 10s linear infinite;
+    text-indent: 0.5in;
+
+    /*vertical-align: text-top; !*wyrownanie np obrazka do textu jak ten piesek w wordzie*!*/
+  /*  line-height: 2in;*/
+/*    margin-left: 1in;*/
+}
+@keyframes blinker-one {
+    50% { opacity: 0; }
+}
+body{
+
+    /*background: url("CV/lib/tlo.jpg") no-repeat scroll;*/
+}
+h1 {
+    text-align: center;
     color: yellow;
     background: green;
-    padding: 4px;}
-.uwaga_12{font-size:16px;
-    font-family:Arial;
+    padding: 4px;
+    border: 5px solid black;
+/*    float: right;*/
+}
+.warn_12{font-size:16px;
+    font-family: Arial;
     color:#804040;
-    font-weight:bold;}
+    font-weight:bold;
+}
+
+
 .czerwony {background-color : red;}
 .innyKolor{background-color: blue;
     font-size: 30px;
@@ -13,4 +39,19 @@ h1 {text-align: center;
 /*etykieta ktora powinna byc uzywana wylacznie raz*/
 #zwierze{
     font-style: italic;
+}
+
+article::first-line { color: aqua;} /*??? jak to wsadzic do tych wyzej {} */
+article::first-letter {
+    color: cadetblue;
+    font-size: 42px;
+}
+article::after {
+    content: "Tekst wstawiany after";
+    font-size: 22px;
+    font-weight: bold;
+}
+article::selection{
+    color: yellow;
+    background: #9AB676;
 }

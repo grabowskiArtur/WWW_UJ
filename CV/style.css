@@ -1,0 +1,69 @@
+article, aside, nav{
+    display: block;
+    border: 3px solid black;
+}
+article, aside {float: left;} /*to jest taka jakby kolejnosc wyswietlana od lewa do prawa tych
+                              article aside itd*/
+article {
+    width: 500px;
+    text-align: center;
+    /*padding-bottom: 25px;*/
+}
+nav {width: 200px;}
+section{float: none;}
+
+nav #favouriteWebpages{
+    border: 2px solid black;
+     /*list-style: none;*/
+     margin: 0;
+     padding: 0;
+ }
+
+body{
+    /*width: 2048px;
+    height: 1152px;*/
+    background: url("lib/tlo.jpg") scroll;
+    float: left;
+}
+
+/*div p { text-align: center;}*/
+div, p { text-align: center;}
+
+h1 {
+    text-align: left;
+    color: brown;
+    background: aquamarine;
+    text-transform: uppercase;
+}
+.container {
+    width: auto;
+    height: 200px;
+}
+
+.container img {
+    width: 180px;
+    height: 100%;
+}
+/*
+.mouseOverLinkStyle{
+    background-color: yellow;
+}*/
+
+.menu{
+    /*text-align: center;*/
+    font-weight: bold;
+    font-size: x-large;
+}
+.favouriteWebpages{
+
+}
+li{
+    /*margin-left: 5px;*/
+}
+
+/*Stylizacja odsylazcy czyli co sie ma z nimi dziac po konkretnych akcjach*/
+a:link {color: red;}
+a:visited {color: #9AB676;}
+a:active {color: green;}
+a:hover {color: yellow;}
+a:focus {font-family: "Times New Roman";}

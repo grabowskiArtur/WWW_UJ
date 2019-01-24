@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Artur Grabowski</title> <!--Tutaj dajesz nazwe strony, to co sie wyswietla na ikonie karty-->
+        <title>dupa123</title> <!--jest drugi raz to samo ale zignorowal! w sumie why ???-->
+        <meta charset="UTF-8">
+        <link>
+        <link rel="stylesheet" href="style.css"/>  <!-- nie ma znacznika zamykajacego -->
+        <!-- bez rel nie dziala. trzeba mu powiedziec zeby sobie wzial ten szablon stylu -->
+        <script type="text/javascript" src="./lib/jquery-3.3.1.js"> <!--integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+                crossorigin="anonymous"--></script> <!--to tez musi byc w HEAD wlaczenie JS w naszym scripcie-->
+    </head>
+    <body>
+        <aside class="menu">
+            <nav>
+                <ul>
+                    <li type="square"><a href="contact.html">​​Dane kontaktowe​​</a></li>
+                    <li type="square"><a href="CV.html">CV</a> </li>
+                    <li type="square"><a href="HistoryOfMyLife.html">Historia zycia</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <article>
+            <img src="./files/zdj.jpg" width=180" height="200" />
+            <footer>
+                <h1 id="titleOfPage"> Artur Grabowski &copy </h1>
+            </footer>
+        </article>
+        <!--<div class="container">
+            &lt;!&ndash; w html wszystko w jednej linijce &ndash;&gt;
+        </div>
+-->
+        <aside class="favouriteWebpages">
+            <nav>
+                Ulubione strony :
+                <ul >
+                    <li><a href="https://www.fcbarca.com/">Barcelona</a></li>
+                    <li><a href="http://skalskidance.pl/">Taniec</a></li>
+                    <!--bez znacznika <a></a> nie zadziala, to on mowi ze to jest link tak to by bylo tylko suche
+                    wypisanie adresu na stronie-->
+                </ul>
+            </nav>
+        </aside>
+        <script>
+            $("a").mouseover(function () {
+                $(this).addClass("mouseOverLinkStyle")
+            }).mouseout(function () {
+                $(this).removeClass("mouseOverLinkStyle")
+            })
+        </script>
+    </body>
+</html>
