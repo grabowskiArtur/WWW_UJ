@@ -14,7 +14,7 @@ article{
     50% { opacity: 0; }
 }
 body{
-
+    background-color: pink;
     /*background: url("CV/lib/tlo.jpg") no-repeat scroll;*/
 }
 h1 {

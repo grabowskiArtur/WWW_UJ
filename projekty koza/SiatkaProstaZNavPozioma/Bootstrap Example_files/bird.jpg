@@ -1,0 +1,231 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<base href="http://koza.if.uj.edu.pl/~marcin/" />
+        <link rel="Shortcut Icon" href="favicon.ico" />
+	<title>Dr inż. Marcin Zieliński</title>
+	<script src="jquery-1.4.2.min.js"></script>
+	<script src="jquery.lightbox-0.5.js"></script>	
+	
+	<link type="text/css" rel="stylesheet" media="screen" href="css/global.css">
+	<link type="text/css" rel="stylesheet" media="screen" href="css/contents.css">
+
+	<link type="text/css" rel="stylesheet" media="screen" href="jquery.lightbox-0.5.css">	
+	
+	
+	
+   <script type="text/javascript">
+      $(document).ready(function(){
+         $('#chCat').bind('change',function(){
+             if(this.options.selectedIndex == 0){
+                $('#cat1').show();
+                $('#cat2').hide();
+                $('#cat3').hide();
+                $('#cat4').hide();                                
+             }
+             if(this.options.selectedIndex == 1){
+                $('#cat2').show();
+                $('#cat1').hide();
+                $('#cat3').hide();
+                $('#cat4').hide();                                
+             }
+             if(this.options.selectedIndex == 2){
+                $('#cat3').show();
+                $('#cat1').hide();
+                $('#cat2').hide();
+                $('#cat4').hide();                
+             }                          
+             if(this.options.selectedIndex == 3){
+                $('#cat3').hide();
+                $('#cat1').hide();
+                $('#cat2').hide();
+                $('#cat4').show();                
+             }                       
+         });  
+         
+        $('.opt_abs').each(function(){
+           $(this).bind('click',function(){
+               var absEl = this.id.replace("sa_","abs_");
+               if($('#'+absEl).css('display')=='block'){
+                  $('#'+absEl).hide();
+               }
+               else{
+                  $('#'+absEl).show();
+               }
+               
+           });
+         }); 
+         
+         $('#spub').bind('click',function(){
+               $('#spub').addClass("act");
+               $('#slec').removeClass("act");
+               $('#srep').removeClass("act");
+               $('#ssem').removeClass("act");
+               
+               
+               $('#publications').show();
+               $('#lectures').hide();
+               $('#reports').hide();
+               $('#seminars').hide();               
+         });
+         
+         $('#slec').bind('click',function(){
+
+               $('#spub').removeClass("act");
+               $('#slec').addClass("act");
+               $('#srep').removeClass("act");
+               $('#ssem').removeClass("act");
+
+               $('#publications').hide();
+               $('#lectures').show();
+               $('#reports').hide();
+               $('#seminars').hide();               
+         });
+         
+         $('#srep').bind('click',function(){
+
+               $('#spub').removeClass("act");
+               $('#slec').removeClass("act");
+               $('#srep').addClass("act");
+               $('#ssem').removeClass("act");
+
+               $('#publications').hide();
+               $('#lectures').hide();
+               $('#reports').show();
+               $('#seminars').hide();
+         });
+         $('#ssem').bind('click',function(){
+
+               $('#spub').removeClass("act");
+               $('#slec').removeClass("act");
+               $('#srep').removeClass("act");
+               $('#ssem').addClass("act");
+
+               $('#publications').hide();
+               $('#lectures').hide();
+               $('#reports').hide();
+               $('#seminars').show();
+         });    
+         
+               
+      });
+      
+      
+      
+   </script>
+   
+   <style type="text/css">
+      .opt {display:inline; border-left:1px solid black; padding:0 0 0 10px;  margin:0 0 0 10px;}
+      .act {text-decoration: none;}
+      .download {float:right; font-size:9px; color: red; padding: 0 10px; border: none; line-height:30px;}
+      ol {padding-left:20px;}
+
+	h4 span{
+         background: #ddd;
+         border:2px solid #ddd;
+         border-radius: 5px;
+         padding: 4px 8px;         
+         color: #666;
+         padding:4px;
+         font-weight:normal;
+      }
+      
+      h4 span.act{
+         background: #00519D;
+         border:2px solid #00519D;
+         color:#fff;
+         /*font-weight:bold;*/
+      }
+      
+   </style>
+   
+   <script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-7552522-4");pageTracker._trackPageview();} catch(err) {}</script>
+
+
+
+
+</head>
+<body>
+	<div id="pageContainer" style="width:990px; margin: 0px auto;">
+	<div style="padding:0px 40px;">
+		<!--1-->
+		<div id="header">
+			<a href="http://www.uj.edu.pl" class="logo png">UJ</a>
+			<div id="faculty">
+				<h1><a href="http://www.if.uj.edu.pl">Instytut Fizyki im. M. Smoluchowskiego</a></h1>
+				<h2><a href="http://www.fais.uj.edu.pl">Wydział Fizyki, Astronomii <br>i Informatyki Stosowanej</a>
+				<br><a href="http://www.uj.edu.pl"> Uniwersytet Jagielloński </a></h2>
+	        </div>
+	        <div id="pelname" style="color:#00519E;">
+	           Dr inż. Marcin Zieliński
+	           <br />
+	           <span style="font-size:12px; font-weight:normal; color:#666;"><b>Zespół Zakładów Fizyki Jądrowej</b></span>
+		   </div>
+			<div id="top-corner-container"> </div>
+		</div>
+		<!--/1-->		
+
+		<!--2-->
+		<div id="menu">
+			<ul>
+			   <li><a href="/~marcin/">HOME</a></li>
+			   <li><a href="/~marcin/CV/">CV</a></li>
+			   <li><a href="/~marcin/publikacje/">PUBLIKACJE</a></li>
+			   <li><a href="/~marcin/patenty/">PATENTY</a></li>
+			   <li><a href="/~marcin/dydaktyka/">DYDAKTYKA</a></li>
+			   <li><a href="/~marcin/kontakt/">KONTAKT</a></li>
+			</ul>
+		</div>
+
+		<script>
+			if($.browser.msie){
+				var menu = $('#menu').html();
+				menu = menu.replace(/li/gi,"td");
+				menu = menu.replace(/<ul>/gi,"<table cellspacing=0 cellpadding=0><tr>");
+				menu = menu.replace(/<\/ul>/gi,"</tr></table>");
+				$('#menu').html(menu);
+			}
+		</script>
+		<!--2-->		
+		
+		<!--7-->
+		<div id="mainContainer">
+
+
+		
+		<div id="leftColumn">		
+			<h3>
+			   
+							</h3> 		
+						</div>
+		
+		
+		<div style="clear:both;"> </div>
+		
+	</div>
+	
+	<!--/7-->
+	
+	
+	<div class="foot">
+			<hr />
+			<div id="uelogo"style="text-align: right">
+				<div style=" color: #999;float: left; font-size:10px; text-align: left;">
+&copy; 2008 - 2019 M.Zieliński | <a href="http://koza.if.uj.edu.pl">Department of Experimental Particle Physics and Applications</a>
+          <br>
+				</div>
+			</div>
+			<div style="clear: both;" />
+		</div>		
+	</div>
+
+	
+</div>
+
+
+</div>
+
+					
+
+</html>
+
