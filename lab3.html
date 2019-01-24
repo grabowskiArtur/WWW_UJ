@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Story</title>
-<meta charset="utf-8"/>
-<link rel="stylesheet" href="style.css"/>  <!-- nie ma znacznika zamykajacego -->
-<!-- bez rel nie dziala. trzeba mu powiedziec zeby sobie wzial ten szablon stylu -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-crossorigin="anonymous"></script>
+    <title>Story</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css"/>  <!-- nie ma znacznika zamykajacego -->s
+    <!-- bez rel nie dziala. trzeba mu powiedziec zeby sobie wzial ten szablon stylu -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js"
+            integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+            crossorigin="anonymous"></script>
 </head>
 <body>
-<h1 id="tytul">My Story</h1> <!-- w html wszystko w jednej linijce -->
-
+<h1 id="tytul">My Story </h1> <!-- w html wszystko w jednej linijce -->
 <p>Once upon a time &copy;, …</p>
 <p>There is sth <br> in the air &lt; </p>
 <ul>
-	<li class="czerwony"> Ala </li>
-	<li class="uwaga_12"> ma </li>
+    <li class="czerwony"> Ala</li>
+    <li class="warn_12"> ma</li>
 </ul>
-<img alt="tekst alternatywny" src="https://samequizy.pl/wp-content/uploads/2015/12/filing_images_c38ed14affe8.jpg" />
+<img id="photo" title="Darth Vader" alt="tekst alternatywny" src="https://samequizy.pl/wp-content/uploads/2015/12/filing_images_c38ed14affe8.jpg"/>
 <a href="link.html">​​ Tekst odnośnika (lub obrazek)​​ </a>
-<h1 class="czerwony" > Ala ma kota </h1>
-<p class="uwaga_12" >
+<h1 class="czerwony"> Ala ma kota </h1>
+<p class="warn_12" title="4344www88" >
     a kot ma ale
 </p>
-<h3 id="zwierze" > <!-- h3 mniejszy naglowek h1 najwiekszy h1-> h6 -->
+<h3 id="zwierze"> <!-- h3 mniejszy naglowek h1 najwiekszy h1-> h6 -->
     krokodyl
+    <a href="#nazwaetykiety"> Przez Twe oczy zielone </a> <br>
+    <a href="link.html#drugaStrona"> Etykieta na innej podstronie </a>
 </h3>
 
 <hr> <!-- kreska w poziomie na stronce -->
 
-<form > <!--to chyba po prostu musi byc do zdarzen-->
+<form> <!--to chyba po prostu musi byc do zdarzen-->
 
     <span>Tu wpisz imie: </span>
     <input type="text">
@@ -37,11 +39,25 @@ crossorigin="anonymous"></script>
     <input type="text">
     <input id="dodaj" type="button" value="WYBIERZ">
     <input id="usun" type="button" value="USUN">
+    <input id="ile" type="button" value="ILOSC">
 
-    <p class="wpisywanie" hidden>
+    <div class="wpisywanie">
         <br><span> Podaj nr telefonu: </span> <input type='text'>
-    </p>
+    </div>
+
+    <!--<ul class="wpisywanie">
+        <li class="OOO">
+            <br>
+            <span> Podaj nr telefonu: </span>
+            <input type='text'>
+        </li>
+    </ul>
+-->
 </form>
+<!--
+<form class="555">
+    <br><span> Podaj nr telefonu: </span> <input type='text'><hr>
+</form>-->
 
 <script>
     // jquery slzy do tego zeby upraszczsac orzystanie z html , checmy manipulowac
@@ -49,57 +65,96 @@ crossorigin="anonymous"></script>
     // komuniacja asynchroniczna
     //na czym,kiedy,co struktura jquery
 
+    $("body").weight= $("#photo").weight;
+
     let iloscNr = 0;
-    $("h1.czerwony").click(function(){
+    $("h1.czerwony").click(function () {
         alert("Hello World");
     }) // kropka to klasy a # identyfikator
-    $("#tytul").mouseover(function(){
+    $("#tytul").mouseover(function () {
         $(this).addClass("innyKolor");
 
-    }).mouseout(function(){
+    }).mouseout(function () {
         $(this).removeClass("innyKolor");
     })
 
-    $("#zwierze").click(function(){
-        $("h1.czerwony").toggle();
+    $("#zwierze").click(function () {
+        $("h1.czerwony").toggle(); /*pojawienie i usuniecie elementu*/
         // display none w kodzie nie da sie teraz odwrocic  dla hide
 
     })
 
-    $("a").mouseover(function(){
+    $("a").mouseover(function () {
         $(this).css("background-color", "yellow"); //inline, w locie, a nie w pliku css
 
     }) // jesli jeden na stronie to mozna sie posluzyc tylko za pomoca tej literki
-    $("a").mouseout(function(){
-        $(this).css("background-color", "white"); // inline, a nie w pliku css
+    $("a").mouseout(function () {
+        $(this).css("background-color", "transparent"); // inline, a nie w pliku css
 
     })
- // id moze byc tylko jeden, identyfikator
-    $("#dodaj").click(function(){ // # do identyfikatora
-        $("p.wpisywanie").show();
-        $(this).after($("p.wpisywanie").after("<br>"));
+    // id moze byc tylko jeden, identyfikator
+    $("#dodaj").click(function () { // # do identyfikatora
+        //$("p.wpisywanie").show();
+        $(this).after($("div.wpisywanie").after("<br><hr>"+$("div.wpisywanie").html()));
         iloscNr++;
         //$(this).after("<br> <span> Tu wpisz Nazwisko: </span> <input type='text'>");
-        $("#usun").show();
-
+        if (iloscNr >= 0) {
+            $("#usun").show();
+        }
     })
 
-    $("#usun").hide(); /*pewnie domyslnie*/
+    //  $("#usun").hide(); /*pewnie domyslnie ??? */
 
+    $("#ile").click(function () {
+        alert(iloscNr);
+    })
 
-    $("#usun").click(function()
-    {
-        $("#dodaj").next().remove();
+    $("#usun").click(function () {
+        //if ($("#dodaj").next() !== $("#usun"))
+        //{
         iloscNr--
-        if (iloscNr ==0)
-        {
+        $("#dodaj").next().remove();
+        if (iloscNr == 0) {
             $("#usun").hide();
         }
-        //
+        //}
     })
 
-//pomysl NAD divem zeby to usuwac
-8
+    //pomysl NAD divem zeby to usuwac
+
 </script>
+    <br><br><br>
+    <article class="blink-one">
+        <a name="nazwaetykiety"> Odkąd zobaczyłem ciebie </a><br>
+        Nie mogę jeść, nie mogę spać <br>
+        Jak do tego doszło, nie wiem? <br>
+        Miłość o sobie dała znać <br> <br>
+
+        Co poradzić mogę na to <br> <br>
+        Że miłość przyszła właśnie dziś <br>
+        Że w sercu mym jest lato <br>
+        A w moich myślach jesteś ty <br> <br>
+
+        Przez twe oczy, te oczy zielone oszalałem <br>
+        Gwiazdy chyba twym oczom oddały cały blask <br>
+        A ja serce miłości spragnione ci oddałem <br>
+        Tak zakochać, zakochać się można tylko raz <br> <br>
+
+        W mych ramionach cię ukryję <br>
+        U stóp Ci złożę cały świat <br>
+        Serce me dla ciebie bije <br>
+        I czeka na twój mały znak. <br> <br>
+
+        Jeden uśmiech twój wystarczy <br>
+        I moje serce gubi rytm <br>
+        O twą miłość będę walczył <br>
+        O miłość walczyć to nie wstyd <br> <br>
+
+        Przez twe oczy, te oczy zielone oszalałem <br>
+        Gwiazdy chyba twym oczom oddały cały blask <br>
+        A ja serce miłości spragnione ci oddałem <br>
+        Tak zakochać, zakochać się można tylko raz <br> <br>
+
+</article>
 </body>
 </html>
