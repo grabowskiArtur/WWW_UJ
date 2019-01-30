@@ -24,7 +24,7 @@ fs.unlink('newFile.txt', function (err) {
         throw err;
     }
     console.log("File deleted!");
-})
+});
 
 fs.rename('newFile2.txt', 'myFile1.txt',function (err) {
     if (err){
@@ -32,7 +32,7 @@ fs.rename('newFile2.txt', 'myFile1.txt',function (err) {
     }
     console.log('File renamed!');
 
-})
+});
 
 /*// The fs.appendFile() method appends specified content to a file. If the file does not exist, the file will be created:
 fsopen('newFile2.txt','w',function (err, file) {
