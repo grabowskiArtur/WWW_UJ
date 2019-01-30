@@ -11,8 +11,8 @@ http.createServer(function (req, res) {
     //res.write("Actual date :" + date.myDateTime());
 
     const q = url.parse(req.url,true).query;
-    const txt = q.year + " " + q.month;
+    const txt = q.year + " " + q.month + " " + q.day;
 
     res.end(txt); //end the response
 }).listen(8080); //the server object listens on port 8080
-
+// address to google chrome : http://localhost:8080/?year=2017&month=July&day=friday
