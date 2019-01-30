@@ -1,4 +1,7 @@
 const http = require('http'); //tu jest js ale jest inteligent i nie musi
+const mongodb = require('mongodb').MongoClient;
+const express = require('express');
+const fs = require('fs');
 
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -8,7 +11,13 @@ const server = http.createServer((req, res) => {
     //res na odwrot
 /*    res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');*/
-    res.end('<h1> Ala ma kota </h1>');
+    fs.readFile('./index.html',function(error, data){
+        if (error) throw error;
+        console.log(data);
+        res.write(data);
+        res.end('');
+    });
+    /*res.end('');*/
 });
 
 server.listen(port, hostname, () => {

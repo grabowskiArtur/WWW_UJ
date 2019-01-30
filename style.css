@@ -1,14 +1,20 @@
 /** { margin:0 ;
     padding: 0;
 }*/ /*ustawienia domyslne dla calej strony*/
+[title~="www"]{color: red;}
 article{
     text-decoration: blink; /*decapricated*/
     animation: blinker-one 10s linear infinite;
     text-indent: 0.5in;
 
+
     /*vertical-align: text-top; !*wyrownanie np obrazka do textu jak ten piesek w wordzie*!*/
   /*  line-height: 2in;*/
 /*    margin-left: 1in;*/
+}
+/*445*/
+article [title~="www"]{
+    color: green;
 }
 @keyframes blinker-one {
     50% { opacity: 0; }
