@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67b6e490-0794-4e1f-9b2b-3b48085065cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NODE_JS_FROM_w3/NODE_BASICS/myfirst.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NODE_JS_FROM_w3/NODE_BASICS/myfirstmodule.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NODE_JS_FROM_w3/NODE_BASICS/myfirst.js" beforeDir="false" afterPath="$PROJECT_DIR$/NODE_JS_FROM_w3/NODE_BASICS/myfirst.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NODE_JS_FROM_w3/NODE_BASICS/myfirst.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+            <state relative-caret-position="336">
+              <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -117,10 +114,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-624" />
-    <option name="y" value="556" />
-    <option name="width" value="1187" />
-    <option name="height" value="830" />
+    <option name="x" value="-1927" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -197,12 +193,12 @@
       <workItem from="1547714696906" duration="21912000" />
       <workItem from="1547988830858" duration="13835000" />
       <workItem from="1548341898552" duration="2403000" />
-      <workItem from="1548360796503" duration="15900000" />
+      <workItem from="1548360796503" duration="18235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116113000" />
+    <option name="totallyTimeSpent" value="118448000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -539,8 +535,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NODE_JS_FROM_w3/NODE_BASICS/myfirst.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+        <state relative-caret-position="336">
+          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
