@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67b6e490-0794-4e1f-9b2b-3b48085065cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NODE/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NODE_JS_FROM_w3/NODE_BASICS/myfirst.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NODE_JS_FROM_w3/NODE_BASICS/myfirstmodule.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NODE/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/NODE/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekty koza/SiatkaProstaZNavPozioma/Bootstrap Example.html" beforeDir="false" afterPath="$PROJECT_DIR$/projekty koza/SiatkaProstaZNavPozioma/Bootstrap Example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekty koza/SiatkaProstaZNavPozioma/Bootstrap Example_files/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/projekty koza/SiatkaProstaZNavPozioma/Bootstrap Example_files/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekty koza/SiatkaZProstaNavPionowa/inneZPDF.html" beforeDir="false" afterPath="$PROJECT_DIR$/projekty koza/SiatkaZProstaNavPionowa/inneZPDF.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projekty koza/SiatkaZProstaNavPionowa/inneZPDF_files/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/projekty koza/SiatkaZProstaNavPionowa/inneZPDF_files/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,96 +18,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab3.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NODE_JS_FROM_w3/NODE_BASICS/myfirst.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3003">
-              <caret line="143" column="39" selection-start-line="143" selection-start-column="39" selection-end-line="143" selection-end-column="39" />
+            <state relative-caret-position="21">
+              <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
               <folding>
-                <element signature="e#561#567#0" expanded="true" />
-                <element signature="e#607#611#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
+        <entry file="file://$PROJECT_DIR$/NODE_JS_FROM_w3/NODE_BASICS/myfirstmodule.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="2" selection-start-line="14" selection-end-line="14" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projekty koza/SiatkaProstaZNavPozioma/Bootstrap Example.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="61" column="42" lean-forward="true" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projekty koza/SiatkaProstaZNavPozioma/Bootstrap Example_files/bootstrap.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="404" column="20" selection-start-line="404" selection-start-column="20" selection-end-line="404" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NODE/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NODE/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NODE/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projekty koza/SiatkaZProstaNavPionowa/inneZPDF.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inneZPDF.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            <state relative-caret-position="42">
+              <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -122,8 +45,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -187,6 +110,9 @@
         <option value="$PROJECT_DIR$/NODE/package.json" />
         <option value="$PROJECT_DIR$/NODE/index.html" />
         <option value="$PROJECT_DIR$/NODE/app.js" />
+        <option value="$PROJECT_DIR$/NODE_JS_FROM_w3/myfirstmodule.js" />
+        <option value="$PROJECT_DIR$/NODE_JS_FROM_w3/myfirst.js" />
+        <option value="$PROJECT_DIR$/NODE_JS_FROM_w3/NODE_BASICS/myfirst.js" />
       </list>
     </option>
   </component>
@@ -209,6 +135,17 @@
               <item name="WWW_UJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="WWW_UJ" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="WWW_UJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WWW_UJ" type="462c0819:PsiDirectoryNode" />
+              <item name="NODE_JS_FROM_w3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WWW_UJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WWW_UJ" type="462c0819:PsiDirectoryNode" />
+              <item name="NODE_JS_FROM_w3" type="462c0819:PsiDirectoryNode" />
+              <item name="NODE_BASICS" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -218,13 +155,15 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.15.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\artek\OneDrive\Desktop\studia\semestr 3\zaaw www\REPO WEBSTORM\WWW_UJ\NODE_JS_FROM_w3\NODE_BASICS" />
       <recent name="C:\Users\artek\OneDrive\Desktop\studia\semestr 3\zaaw www\REPO WEBSTORM\WWW_UJ\BOOTSTRAP" />
     </key>
   </component>
@@ -258,12 +197,12 @@
       <workItem from="1547714696906" duration="21912000" />
       <workItem from="1547988830858" duration="13835000" />
       <workItem from="1548341898552" duration="2403000" />
-      <workItem from="1548360796503" duration="12172000" />
+      <workItem from="1548360796503" duration="15900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112385000" />
+    <option name="totallyTimeSpent" value="116113000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -276,6 +215,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1548999" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -572,21 +512,38 @@
     <entry file="file://$PROJECT_DIR$/projekty koza/SiatkaProstaZNavPozioma/Bootstrap Example.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="61" column="42" lean-forward="true" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projekty koza/SiatkaZProstaNavPionowa/inneZPDF.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NODE/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="412">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NODE_JS_FROM_w3/NODE_BASICS/myfirstmodule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NODE_JS_FROM_w3/NODE_BASICS/myfirst.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
