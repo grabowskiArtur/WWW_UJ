@@ -16,10 +16,11 @@ MongoClient.connect(url,function (err, db) {
 
 MongoClient.connect(url, function (err, db) {
     if (err) throw err;
-    const bigDB = db.db("BigDB");
+    const bigDB = db.db("BigDB2");
     const myBigObject = [
         {name : "Artur", address: "golaska 1"},
-        {name : "Kazek" , address:  "Przykopy 14a"}
+        {name : "Kazek" , address:  "Przykopy 14a"},
+        {name : "Artur", address: "fredry"}
     ];
     bigDB.collection("Sasiedzi").insertMany(myBigObject, function (err, res) {
         if (err) throw err;
