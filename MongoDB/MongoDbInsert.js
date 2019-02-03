@@ -20,14 +20,17 @@ MongoClient.connect(url, function (err, db) {
     const myBigObject = [
         {name : "Artur", address: "golaska 1"},
         {name : "Kazek" , address:  "Przykopy 14a"},
-        {name : "Artur", address: "fredry"}
+        {name : "Artur", address: "fredry"},
+        {name : "Natalia", address: "Podleska 14a"}
     ];
+    bigDB.collection("Sasiedzi").remove();
     bigDB.collection("Sasiedzi").insertMany(myBigObject, function (err, res) {
         if (err) throw err;
         console.log("MultipleDatabase inserted");
         console.log("Number of documents : " + res.insertedCount);
         console.log(res);
     })
+    db.close();
 });
 
 //to specify id
