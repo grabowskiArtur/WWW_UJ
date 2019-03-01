@@ -13,7 +13,7 @@ http.createServer(function (req, res) {
 // you could find more information on :https://www.w3schools.com/nodejs/nodejs_filesystem.asp
 fs.appendFile('newFile.txt','Ala ma kota2',function (err) {
     if (err)
-    {
+    {q
         throw err;
     }
     console.log("saved");
@@ -26,7 +26,7 @@ fs.unlink('newFile.txt', function (err) {
     console.log("File deleted!");
 });
 
-fs.rename('newFile2.txt', 'myFile1.txt',function (err) {
+fs.rename('myFile1.txt', 'myFile2.txt',function (err) {
     if (err){
         throw err;
     }

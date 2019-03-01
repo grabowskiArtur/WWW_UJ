@@ -31,6 +31,7 @@ MongoClient.connect(url, function (err, db) {
         console.log(res);
     })
     db.close();
+    // db.dropDatabase(); it does not work with easy version of MongoDB
 });
 
 //to specify id

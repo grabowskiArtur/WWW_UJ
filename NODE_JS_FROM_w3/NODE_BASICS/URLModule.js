@@ -1,3 +1,5 @@
+//look at de_FileSystemModule.js there will be better solution I think.
+
 const url = require('url');
 const http = require('http');
 const fs = require('fs');
@@ -5,6 +7,9 @@ const fs = require('fs');
 http.createServer(function (req, res) {
     const q = url.parse(req.url,true);
     const fileName = "." + q.pathname;
+    console.log(fileName);
+    console.log(req.url);
+    console.log(q);
 
     fs.readFile(fileName,function (err, data) {
         if (err){

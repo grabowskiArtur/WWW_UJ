@@ -1,10 +1,13 @@
+//WARNING! Program could have problem with start because of :
+//const dbo = db.db("myDb221"); which could already exist , change name to nonused at maybe it will start without problems
+
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://127.0.0.1:27017/";
 
 MongoClient.connect(url, function (err, db) {
     if (err) throw err;
 
-    const dbo = db.db("myDb220");
+    const dbo = db.db("myDb221");
 
     const myObj = {n_id: 1, product_id: 154, status: 1 };
     dbo.collection("orders").insertOne(myObj, function (err, res) {
@@ -40,4 +43,5 @@ MongoClient.connect(url, function (err, db) {
         console.log(JSON.stringify(res));
         db.close();
     })
+
 });
