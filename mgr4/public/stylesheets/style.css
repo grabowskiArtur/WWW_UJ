@@ -30,7 +30,7 @@ body{
 #maincontent #sidebarLeft {
   float: left;
   width: 155px;
-  background: #FFFFFF;
+  background-color: transparent;
   padding: 1px 0px 0px 1px;
 }
 #menu li { background: #0033CC;
@@ -38,7 +38,7 @@ body{
   font-size: 18px;
   margin: 0;
   padding: 0;
-  width: 155px;
+  /*width: 155px;*/
 }
 #menu a { display: block;
   border-bottom: 1px solid #FFFFFF;
